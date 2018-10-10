@@ -23,7 +23,7 @@ import static android.content.ContentValues.TAG;
  */
 public class Tether {
 
-    private boolean isTetheringEnabled(Context context) {
+    public static boolean isTetheringEnabled(Context context) {
 
         boolean isWifiAPenabled = false;
 
@@ -48,7 +48,7 @@ public class Tether {
         return isWifiAPenabled;
     }
 
-    public List<Client> getTetheringClientsList(Context context) {
+    public static List<Client> getTetheringClientsList(Context context) {
 
         List<Client> result = new ArrayList<>();
 
